@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    font-size: 16px;
+    font-family: 'Squada One', sans-serif;
+}
+
+body {
+    background-color: aqua;
+}
+
+.header-container {
+    display: flex;
+    color: black;
+    background-color: #FFB3DD; 
+    padding: 20px 0;
+  }
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 0 1rem;
+    justify-content:center;
+    align-items: center; /* vertical alignment */
+  }
+
+.logo img {
+    width: 35px;
+}
+ 
+h1 { 
+  text-transform: uppercase;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+h3 {
+  text-align: center;
+  color: grey;
+  padding-bottom: .5rem;
+}
+
+  .grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    /* Adding 'wrap' forces items that don’t fit to get bumped down to the next row: */
+    flex-direction: row;
+    /* flex-direction: column; - This changes the direction of the container from the default row value. Instead of a grid, the page would have a single vertical column: */
+}
+  
+  .grid-item {
+    width: 300px;
+    background-color: #f6ee0448;
+    /* height: 300px;  need to remove this if the content will be dynamic */
+    justify-content: center;
+  }
+
+  .grid-item img {
+    width: 300px;
+}
+
+.grid-item:hover {
+  background-color: #f6ee04c1;
+}
+
+.first-item {
+    position: relative;
+}
+
+.first-item > span {
+  position: relative;
+  z-index: 2;
+}
+
+.first-item > span:hover {
+  opacity: 0;
+}
+
+.photo-hover { 
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;      /* This is nesting insite first item that needs to be have a relative position*/
+}
+
+
+
+.fourth-item {
+    background-color: rgb(50, 50, 50);
+}
+
+.fixed-element {
+  position: fixed;
+  top: 80%;
+  right: 0px;
+  background-color: white;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.fixed-element:hover {
+  background-color: #ffe942;
+}
+
+.fixed-element img {
+  transform: translate(-50%,-50%)
+}
+
+footer {
+    background-color: #FFB3DD;
+  /*  position: fixed;
+    left: 0px;
+    bottom: 0px; */
+    padding: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+
+  /* Mobile Styles */
+
+  @media screen and (max-width: 599px) {
+    .logo img {
+        width: 35px;
+    }
+    h1 {
+        font-size: 2rem;
+      }
+    
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .fixed-element {
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    .fixed-element img {
+      width: 1.5rem;
+      transform: translate(-50%,-50%)
+    }
+  }
+
+
+  /* Tablet Styles and (max-width: 960px) */
+
+  @media screen and (min-width: 600px) {
+    .logo img {
+        width: 70px;
+    }
+    h1 {
+        font-size: 3.5rem;
+      }
+    
+    h3{
+      font-size: 1.2rem;
+    }
+
+    .fixed-element {
+      width: 4rem;
+      height: 3rem;
+      padding: 1.5rem;
+    }
+
+    .fixed-element img {
+      width: 2rem;
+      transform: translate(-50%,-50%)
+    }
+
+    
+  }
+
+/* Desktop Styles */
