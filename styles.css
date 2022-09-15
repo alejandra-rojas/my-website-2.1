@@ -13,6 +13,11 @@ body {
     background-color: aqua;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem; 
+}
+
 .header-container {
     display: flex;
     color: black;
@@ -29,13 +34,21 @@ header {
   }
 
 .logo img {
-    width: 35px;
+    padding-right: 20px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
 }
  
 h1 { 
   text-transform: uppercase;
-  padding-left: 20px;
   white-space: nowrap;
+}
+
+h2 {
+
 }
 
 h3 {
@@ -44,24 +57,38 @@ h3 {
   padding-bottom: .5rem;
 }
 
+section {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  grid-column-gap: 10px;
+}
+
+.intro {
+  grid-column: 2;
+  background-color: beige;
+  padding: 2rem;
+}
+
   .grid-container {
     display: flex;
     justify-content: center;
   }
   
   .grid {
-    width: 900px;
+    width: 930px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap; 
     /* Adding 'wrap' forces items that don’t fit to get bumped down to the next row: */
     flex-direction: row;
     /* flex-direction: column; - This changes the direction of the container from the default row value. Instead of a grid, the page would have a single vertical column: */
+    justify-content: center;
+    align-items: baseline;
+    row-gap: 1rem;
 }
   
   .grid-item {
     width: 300px;
-    background-color: #f6ee0448;
+    background-color: beige;
     /* height: 300px;  need to remove this if the content will be dynamic */
     justify-content: center;
   }
@@ -101,6 +128,11 @@ h3 {
     background-color: rgb(50, 50, 50);
 }
 
+.last-item {
+  /*flex-grow: 1;*/
+}
+
+
 .fixed-element {
   position: fixed;
   top: 80%;
@@ -125,7 +157,6 @@ footer {
     bottom: 0px; */
     padding: 1rem;
     width: 100%;
-    margin-top: 2rem;
   }
 
 
@@ -133,10 +164,14 @@ footer {
 
   @media screen and (max-width: 599px) {
     .logo img {
-        width: 35px;
+        width: 60px;
     }
     h1 {
         font-size: 2rem;
+      }
+    
+    h2 {
+        font-size: 1rem;
       }
     
     h3 {
@@ -160,7 +195,7 @@ footer {
 
   @media screen and (min-width: 600px) {
     .logo img {
-        width: 60px;
+        width: 80px;
     }
     h1 {
         font-size: 3.5rem;
