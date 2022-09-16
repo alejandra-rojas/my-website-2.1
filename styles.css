@@ -4,11 +4,14 @@
     box-sizing: border-box;
   }
 
+/* Global variable declaration */
 :root {
   --green:  #f6ee04c1;
   --pink: #FFB3DD;
   --peach: #F76F69;
 }
+
+/* Styles */
 
 html {
     font-size: 16px;
