@@ -65,19 +65,17 @@ h3 {
 
 section {
   display: grid;
-  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-columns: 1rem 1fr 1rem;
   grid-column-gap: 10px;
 }
 
 .intro {
   grid-column: 2;
+  font-size: .8rem;
   background-color: beige;
-  padding: 2.2rem 2.5rem;
+  padding: 1.5rem ;
   color: gray;
   font-family: monospace;
-  text-align: justify;
-
-
 }
 
 
@@ -223,7 +221,7 @@ footer {
     }
 
     .intro {
-      line-height: 1.4rem;
+      line-height: 1.2rem;
     }
 
 
@@ -257,6 +255,8 @@ footer {
     .grid-item img {
       padding: 0;
   }
+
+  
   }
 
 
@@ -297,6 +297,10 @@ footer {
       display: none;
     }
 
+    section {
+      grid-template-columns: 2rem 1fr 2rem;
+    }
+
     
   }
 
@@ -313,6 +317,10 @@ footer {
 
   .column2 {
     display:flex;
-  }  
+  }
+  
+  section {
+    grid-template-columns: 3rem 1fr 3rem;
+  }
 
  }
