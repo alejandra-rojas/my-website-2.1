@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-    <title>The best of the nineties!</title>
+    <title>2.2 The best of the nineties!</title>
     <link rel="icon" type="image/x-icon" href="Media/favicon_io/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +19,9 @@
 
   <body>
     <div class="page">
-      <div class="header-container">
+      <div class="header-container" id="heead">
         <header>
-          <div class="logo">
+          <div class="logo" id="logo">
             <img
               src="Media/smileyshade.png"
               alt="Nineties yellow smiley face"
@@ -41,46 +41,93 @@
           pop, which led to the commercial success of Britpop bands like Blur
           and Oasis; followed by a stream of post-Britpop bands like Radiohead
           and The Verve.
+          <span id="extraIntro" class="underlineLink"><a>Read More.</a></span>
         </div>
       </section>
 
       <div class="grid-container">
         <div class="grid">
-          <div class="grid-item first-item">
-            <span><img src="images/bjork-post.png" /></span>
-            <div class="photo-hover">
-              <!-- Want this photo to appear on hover only -->
-              <img src="images/bjork-debut.png" />
+          <div class="column1">
+            <div class="grid-item first-item">
+              <span
+                ><img
+                  src="images/bjork-post.jpg"
+                  alt="Bjork in a city setting wearing a hat"
+              /></span>
+              <div class="photo-hover">
+                <!-- Want this photo to appear on hover only -->
+                <img src="images/bjork-debut.jpg" />
+              </div>
+              <h3>Post. Björk</h3>
+              <p>
+                The music is excellent and symphonically charged, with some
+                electronic passages, but Bjork's voice is one that you will
+                either love or hate. Watch video.
+              </p>
             </div>
-            <h3>Post. Björk</h3>
-            <p>
-              The music is excellent and symphonically charged, with some
-              electronic passages, but Bjork's voice is one that you will either
-              love or hate.
-            </p>
+
+            <div class="grid-item">
+              <img
+                src="images/portishead-dummy.jpg"
+                alt="Cover of the album showing a woman walking down the stairs."
+              />
+              <h3>Dummy. Portishead</h3>
+              <div class="player">
+                <audio controls preload="metadata">
+                  <source src="Media/strangers.mp3" type="audio/mpeg" />
+                  Audio unsupported by your browser.
+                </audio>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <img src="images/when-the-pawn.jpg" alt="Cover of the album" />
+              <h3>When the pawn... Fiona Apple</h3>
+            </div>
           </div>
-          <div class="grid-item">
-            <img src="images/ok-computer.png" />
-            <h3>OK Computer. Radiohead</h3>
+          <div class="column2">
+            <div class="grid-item first-item">
+              <img src="images/massive-attack.jpg" />
+              <h3>Mezzanine. Massive Attack</h3>
+            </div>
+
+            <div class="grid-item fourth-item">
+              <video
+                width="100%"
+                height="100%"
+                src="Media/faithless-insomnia_122731.mp4"
+                controls
+                muted
+                loop
+                autoplay
+              ></video>
+              <h3>Insomnia. Faithless</h3>
+            </div>
+
+            <div class="grid-item">
+              <img src="images/soundgarden.jpg" />
+              <h3>Superunknown. Soundgarden</h3>
+            </div>
           </div>
-          <div class="grid-item">
-            <img src="images/portishead-dummy.png" />
-            <h3>Dummy. Portishead</h3>
-          </div>
-          <div class="grid-item fourth-item">
-            <video
-              width="300"
-              height="300"
-              src="Media/faithless-insomnia_122731.mp4"
-              controls
-              muted
-              loop
-            ></video>
-            <h3>Insomnia. Faithless</h3>
-          </div>
-          <div class="grid-item last-item">
-            <img src="images/massive-attack.jpeg" />
-            <h3>Mezzanine. Massive Attack</h3>
+
+          <div class="column3">
+            <div class="grid-item">
+              <img src="images/ok-computer.jpg" />
+              <h3>OK Computer. Radiohead</h3>
+              <p>
+                Progress is a bitch, but don't let the machines, or their
+                masters, grind you down: That is the simple message encoded in
+                the art-rock razzle-dazzle of OK Computer.
+              </p>
+            </div>
+            <div class="grid-item">
+              <img src="images/jagged.jpg" />
+              <h3>Jagged little pill. Alanis Morissette</h3>
+            </div>
+            <div class="grid-item">
+              <img src="images/wilco.jpg" />
+              <h3>Being there. Wilco</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -89,7 +136,7 @@
         <div class="fixed-element">
           <img
             src="images/photo-camera-svgrepo-com.svg"
-            alt="Icon of a camera"
+            alt="Icon of a photography camera"
           />
         </div>
       </aside>
@@ -101,5 +148,6 @@
         <div></div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
