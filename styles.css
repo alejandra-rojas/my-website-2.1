@@ -27,6 +27,8 @@ p {
   padding: .8rem 1.5rem 1rem 1.5rem; 
 }
 
+
+
 .header-container {
     display: flex;
     color: black;
@@ -44,6 +46,20 @@ header {
 
 .logo img {
     padding-right: 20px;
+    transition: all 1s;
+    animation: Animate 8s;
+}
+
+@keyframes Animate {
+    0% { transform: translate(0%, 0);
+    }
+    50% {transform: translate(600%, 0) rotate(60deg);}
+
+    100% {transform: translate (-200%, 0); }
+}
+
+.logo img:hover {
+  transform: rotate(360deg);
 }
 
 .header-text {
@@ -79,6 +95,9 @@ section {
   text-align: justify;
 }
 
+.hide {
+  display: none;
+}
 
 .underlineLink {
   background-color: var(--green);
@@ -183,7 +202,9 @@ audio {
   background-color: white;
   cursor: pointer;
   z-index: 3;
+  transition: all 2s;
 }
+
 
 .fixed-element:hover {
   background-color: var(--green);
@@ -191,6 +212,10 @@ audio {
 
 .fixed-element img {
   transform: translate(-50%,-50%)
+  transition: all  1s;
+}
+
+.fixed-element img:hover {
 }
 
 footer {
@@ -201,7 +226,23 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
     width: 100%;
+    display: grid;
+    grid-template-columns: auto-fit 1fr;
+    grid-column-gap: 10px;
   }
+  
+  .footer-item {
+    grid-column: 1;
+    padding: 1rem 0 ;
+    font-family: monospace;
+  }
+
+  .login-sign {
+    grid-column: 2;
+    padding: 1rem 0;
+  text-align: right;
+  text-transform: uppercase;
+ }
 
 
   /* Mobile Styles */
