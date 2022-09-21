@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
 
   <body>
@@ -40,12 +44,13 @@
 
       <section>
         <div class="intro">
-          In the 90s Alternative rock reached the mainstream, emerging from the
-          Madchester scene to produce dream pop, shoegazing, post rock and indie
-          pop, which led to the commercial success of Britpop bands like Blur
-          and Oasis; followed by a stream of post-Britpop bands like Radiohead
-          and The Verve.
-          <span id="extraIntro" class="underlineLink"><a>Read More.</a></span>
+          In the 90s Alternative rock reached the mainstream,<span id="hide"
+            >emerging from the Madchester scene to produce dream pop,
+            shoegazing, post rock and indie pop, which led to the commercial
+            success of Britpop bands like Blur and Oasis; followed by a stream
+            of post-Britpop bands like Radiohead and The Verve.
+          </span>
+          <span class="underlineLink" id="lessIntro"><a>Read Less.</a></span>
         </div>
       </section>
 
@@ -149,7 +154,9 @@
         <div class="footer-item">
           Published <time datetime="2022-9-13"> Sep 13 2020</time>
         </div>
-        <div></div>
+        <div data-netlify-identity-button class="login-sign">
+          Login / Sign up
+        </div>
       </footer>
     </div>
     <script src="script.js"></script>
