@@ -37,7 +37,7 @@ window.addEventListener('resize', colorDelay);
 
 function clickBox () {
     let readLess = document.getElementById('hide');
-    readLess.classList.add('hide');
+    readLess.classList.toggle('hide');
 
 }
 

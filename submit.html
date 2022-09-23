@@ -4,63 +4,129 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Submit your artwork</title>
+    <meta name="description" content="This is the page to upload your art.." />
+    <link rel="icon" type="image/x-icon" href="Media/favicon_io/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       type="text/javascript"
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
   </head>
+
   <body>
-    <div>You need to be signed in to see this page</div>
+    <div class="page">
+      <div class="header-container" id="heead">
+        <header>
+          <div class="logo" id="logo">
+            <img
+              src="Media/smileyshade.png"
+              alt="Nineties yellow smiley face"
+            />
+          </div>
+          <div class="header-text">
+            <h1 class="animate__animated animate__bounce">
+              The best 90s records
+            </h1>
+            <h2>aka the albums that shaped me</h2>
+          </div>
+        </header>
+      </div>
 
-    <form name="Art Submission" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label
-          >Your Role:
-          <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label
-        >
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+      <menu>
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">Buy</a></li>
+          <li>
+            <a
+              href="https://www.rollingstone.com/music/music-lists/100-best-albums-of-the-90s-152425/"
+              target="_blank"
+              >100 Best of the 90s</a
+            >
+          </li>
+          <li><a href="/submit.html">Submit</a></li>
+        </ul>
+      </menu>
 
-    another form with text success:
-    <form
-      name="contact"
-      action="/pages/success"
-      method="POST"
-      data-netlify="true"
-    ></form>
+      <section>
+        <div>You need to be signed in to see this page</div>
 
-    upload files in this form:
-    <form name="fileForm" enctype="multipart/form-data" data-netlify="true">
-      <p>
-        <label>
-          <span>Name:</span>
-          <input name="name" type="text" />
-        </label>
-      </p>
-      <p>
-        <label>
-          <span>Add file:</span>
-          <input name="file" type="file" />
-        </label>
-      </p>
-      <button>Submit</button>
-    </form>
-    <p class="result"></p>
+        <form name="Art Submission" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label
+              >Your Role:
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label
+            >
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+
+        Another form with text success:
+        <form
+          name="contact"
+          action="/pages/success"
+          method="POST"
+          data-netlify="true"
+        ></form>
+
+        upload files in this form:
+        <form name="fileForm" enctype="multipart/form-data" data-netlify="true">
+          <p>
+            <label>
+              <span>Name:</span>
+              <input name="name" type="text" />
+            </label>
+          </p>
+          <p>
+            <label>
+              <span>Add file:</span>
+              <input name="file" type="file" />
+            </label>
+          </p>
+          <button>Submit</button>
+        </form>
+        <p class="result"></p>
+      </section>
+      <span class="underlineLink" id="lessIntro"><a>Close intro</a></span>
+
+      <footer>
+        <div class="footer-item">
+          Published <time datetime="2022-9-13"> Sep 13 2020</time>
+        </div>
+        <div data-netlify-identity-button class="login-sign">
+          Login / Sign up
+        </div>
+        <div data-netlify-identity-menu></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
