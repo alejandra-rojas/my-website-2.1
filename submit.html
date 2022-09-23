@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit your artwork</title>
+    <script
+      type="text/javascript"
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+  </head>
+  <body>
+    <div>You need to be signed in to see this page</div>
+
+    <form name="Art Submission" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label
+          >Your Role:
+          <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label
+        >
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+    another form with text success:
+    <form
+      name="contact"
+      action="/pages/success"
+      method="POST"
+      data-netlify="true"
+    ></form>
+
+    upload files in this form:
+    <form name="fileForm" enctype="multipart/form-data" data-netlify="true">
+      <p>
+        <label>
+          <span>Name:</span>
+          <input name="name" type="text" />
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Add file:</span>
+          <input name="file" type="file" />
+        </label>
+      </p>
+      <button>Submit</button>
+    </form>
+    <p class="result"></p>
+  </body>
+</html>

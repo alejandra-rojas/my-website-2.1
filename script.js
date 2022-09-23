@@ -1,8 +1,5 @@
-// document.body.style.background = 'red'; // make the background red
-// setTimeout(() => document.body.style.background = '', 3000); // return back
-
 function changeColors() {
-  document.body.style.background = 'var(--green)';
+  document.body.style.background = 'black'; 
   document.getElementById('heead').style.backgroundColor = 'cyan';
   // document.getElementById('logo').style.transform = 'rotate(-180deg)'; - This has been accomplished with CSS
 
@@ -10,7 +7,7 @@ function changeColors() {
 
 function changeColorsBack() {
     document.body.style.background = 'cyan';
-    document.getElementById('heead').style.backgroundColor = 'var(--pink)';
+    document.getElementById('heead').style.backgroundColor = 'var(--yellow)';
     // document.getElementById('logo').style.transform = 'rotate(0deg)'; - This has been accomplished with CSS
   }
 
