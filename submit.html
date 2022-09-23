@@ -64,6 +64,26 @@
 
       <h3>Submit your artwork</h3>
 
+      <form name="Art Submission" method="POST" data-netlify="true">
+        <p>
+          <label>Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Age: <input type="number" name="age" /></label>
+        </p>
+
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+
+      upload files in this form:
       <form
         name="fileUploads"
         enctype="multipart/form-data"
@@ -90,7 +110,7 @@
         <p>
           <label
             >Category:
-            <select name="message">
+            <select name="Categoria[]">
               <option value="video">Video</option>
               <option value="photo">Illustration</option>
             </select></label
@@ -100,7 +120,7 @@
         <p>
           <label>
             <span>Artwork title:</span>
-            <input name="titulo" type="text" />
+            <input name="name" type="text" />
           </label>
         </p>
         <p>
@@ -117,10 +137,7 @@
         <div class="footer-item">
           Published <time datetime="2022-9-13"> Sep 13 2020</time>
         </div>
-        <div data-netlify-identity-button class="login-sign">
-          Login / Sign up
-        </div>
-        <div data-netlify-identity-menu></div>
+        <div data-netlify-identity-button class="login-sign"></div>
       </footer>
     </div>
     <script src="script.js"></script>
