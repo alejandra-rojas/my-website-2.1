@@ -62,60 +62,57 @@
         </ul>
       </menu>
 
-      <section>
-        <div>You need to be signed in to see this page</div>
+      <div>You need to be signed in to see this page</div>
 
-        <form name="Art Submission" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
-          <p>
-            <label
-              >Your Role:
-              <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select></label
-            >
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+      <form name="Art Submission" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label
+            >Your Role:
+            <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select></label
+          >
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
 
-        Another form with text success:
-        <form
-          name="contact"
-          action="/pages/success"
-          method="POST"
-          data-netlify="true"
-        ></form>
+      Another form with text success:
+      <form
+        name="contact"
+        action="/pages/success"
+        method="POST"
+        data-netlify="true"
+      ></form>
 
-        upload files in this form:
-        <form name="fileForm" enctype="multipart/form-data" data-netlify="true">
-          <p>
-            <label>
-              <span>Name:</span>
-              <input name="name" type="text" />
-            </label>
-          </p>
-          <p>
-            <label>
-              <span>Add file:</span>
-              <input name="file" type="file" />
-            </label>
-          </p>
-          <button>Submit</button>
-        </form>
-        <p class="result"></p>
-      </section>
-      <span class="underlineLink" id="lessIntro"><a>Close intro</a></span>
+      upload files in this form:
+      <form name="fileForm" enctype="multipart/form-data" data-netlify="true">
+        <p>
+          <label>
+            <span>Name:</span>
+            <input name="name" type="text" />
+          </label>
+        </p>
+        <p>
+          <label>
+            <span>Add file:</span>
+            <input name="file" type="file" />
+          </label>
+        </p>
+        <button>Submit</button>
+      </form>
+      <p class="result"></p>
 
       <footer>
         <div class="footer-item">
