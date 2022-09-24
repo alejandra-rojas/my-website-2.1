@@ -61,15 +61,17 @@
 
       <section>
         <div class="intro" id="hide">
-          In the 90s Alternative rock reached the mainstream,<span>
-            emerging from the Madchester scene to produce dream pop, shoegazing,
-            post rock and indie pop, which led to the commercial success of
-            Britpop bands like Blur and Oasis; followed by a stream of
-            post-Britpop bands like Radiohead and The Verve.
-          </span>
+          In the 90s Alternative rock reached the mainstream, emerging from the
+          Madchester scene to produce dream pop, shoegazing, post rock and indie
+          pop, which led to the commercial success of Britpop bands like Blur
+          and Oasis; followed by a stream of post-Britpop bands like Radiohead
+          and The Verve.
         </div>
       </section>
-      <span class="underlineLink" id="lessIntro"><a>Close intro</a></span>
+
+      <div class="section_toggle">
+        <div class="intro_toggle" id="lessIntro">+/- INTRO</div>
+      </div>
 
       <div class="grid-container">
         <div class="grid">
@@ -181,13 +183,23 @@
       </div>
 
       <aside>
-        <div class="fixed-element">
+        <div id="modalBtn" class="fixed-element">
           <img
             src="images/photo-camera-svgrepo-com.svg"
             alt="Icon of a photography camera"
           />
         </div>
       </aside>
+
+      <div id="simpleModal" class="modal">
+        <div class="modal-content">
+          <span class="closeBtn">&times;</span>
+          <figure>
+            <div class="photoModal"><img src="images/mein98.jpg" /></div>
+            <figcaption>Hello! This is me in the 90s.</figcaption>
+          </figure>
+        </div>
+      </div>
 
       <footer>
         <div class="footer-item">
