@@ -455,6 +455,26 @@ footer {
     display: none;
   }
 
+  .menu li {
+    border-right: beige 1px solid;
+    padding: 0 1rem 0 0;
+  }
+
+  .menu li:last-of-type {
+    border-right: none;
+  }
+
+  a:link,
+  a:visited {
+    color: #55198c;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline 3px red;
+    color: blue;
+  }
+
   .intro {
     font-size: 1.3rem;
     line-height: 1.8rem;
