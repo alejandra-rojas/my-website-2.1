@@ -131,7 +131,7 @@ section {
 
 .intro_btn {
   grid-column: 2;
-  padding: 0.2rem 0.5rem;
+  padding: 0.1rem 0.5rem;
   background-color: beige;
   font-family: monospace;
   color: gray;
@@ -139,14 +139,16 @@ section {
   font-size: 0.8rem;
   justify-self: end;
   position: relative;
+  top: -7px;
+  left: -10px;
   cursor: pointer;
   border: none;
-  border-bottom: #ffb3dd solid 1px;
+  border-bottom: #ffb3dd solid 2px;
 }
 
 .intro_btn:hover {
-  color: grey;
-  background-color: var(--yellow);
+  color: white;
+  background-color: red;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
@@ -256,6 +258,8 @@ audio {
 
 .fixed-element:hover {
   background-color: var(--green);
+  border-radius: 20%;
+  transition: all 2s;
 }
 
 .fixed-element img {
@@ -356,6 +360,10 @@ footer {
     margin-top: 0;
   }
 
+  .header-container {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  }
+
   .header {
     justify-content: space-around;
   }
@@ -367,8 +375,25 @@ footer {
   .menu {
     flex-direction: column;
     text-align: center;
-    padding-top: 10px;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     display: none;
+  }
+
+  .menu li {
+    line-height: 2rem;
+    border-bottom: beige 1px solid;
+  }
+
+  .menu li:last-of-type {
+    border-bottom: none;
+  }
+
+  a:link,
+  a:visited {
+    color: #55198c;
+    text-decoration: none;
   }
 
   .ham-active1 {
