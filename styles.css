@@ -471,8 +471,7 @@ footer {
   }
 
   a:hover {
-    text-decoration: underline 3px red;
-    color: blue;
+    text-decoration: underline 3px blue;
   }
 
   .intro {
