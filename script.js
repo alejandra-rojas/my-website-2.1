@@ -1,3 +1,4 @@
+// Change colors when clicking Smiley
 function changeColors() {
   document.body.style.background = 'black'; 
   document.getElementById('heead').style.backgroundColor = 'cyan';
@@ -11,6 +12,10 @@ function changeColorsBack() {
     // document.getElementById('logo').style.transform = 'rotate(0deg)'; - This has been accomplished with CSS
   }
 
+logo.addEventListener('mouseover', changeColors);
+logo.addEventListener('click', changeColorsBack);
+
+  // Change background colours when resizing window
 function colorDelay() {
     document.body.style.background = 'black';
     document.getElementById('heead').style.color = 'red';
@@ -18,35 +23,34 @@ function colorDelay() {
     setTimeout(() => document.getElementById('heead').style.color = '', 1500);
   }
 
-logo.addEventListener('mouseover', changeColors);
-logo.addEventListener('mouseout', changeColorsBack);
 window.addEventListener('resize', colorDelay);
 
 
-// setTimeout(() => document.getElementById('logo').style.background = '', 1500)
-
-// function expandIntro() {
-//     let myElement = document.createElement('p'); // create variable
-//     myElement.innerHTML = ('Extra intro text. <a href:"">Hey</a>'); // set content
-//     document.getElementById('extraIntro').appendChild(myElement); // appending it to new element 'content'
+// Read More-Less Intro 
+// function clickBox () {
+//     let readLess = document.getElementById('hide');
+//     readLess.classList.toggle('hide');
 // }
 
-// let button = document.getElementById('extraIntro');
-// button.addEventListener('click', expandIntro);
+// let readLess = document.getElementById('lessIntro');
+// readLess.addEventListener('click', clickBox);
 
 
-function clickBox () {
-    let readLess = document.getElementById('hide');
-    readLess.classList.toggle('hide');
+// Close/Open Intro
+function closeopenIntro() {
+  let dots = document.getElementById("intro");
+  let btnText = document.getElementById("lessIntro");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "block";
+    btnText.innerHTML = "&times;";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read intro";
+  }
 }
 
-let readLess = document.getElementById('lessIntro');
-readLess.addEventListener('click', clickBox);
-
-
 // Modal 
-
 // Get modal element
 let modal = document.getElementById('simpleModal');
 // Get open modal button
@@ -76,3 +80,25 @@ function outsideClick(e){
         modal.style.display = 'none';
     }
 }
+
+
+// Hamburger Menu Mobile
+let toggleButton = document.getElementById('ham-button');
+let navList = document.getElementById('ham-active');
+
+toggleButton.addEventListener('click', () => {
+  navList.classList.toggle('ham-active1');
+})
+
+
+// Apending a new element 'p' to HTML
+// setTimeout(() => document.getElementById('logo').style.background = '', 1500)
+
+// function expandIntro() {
+//     let myElement = document.createElement('p'); // create variable
+//     myElement.innerHTML = ('Extra intro text. <a href:"">Hey</a>'); // set content
+//     document.getElementById('extraIntro').appendChild(myElement); // appending it to new element 'content'
+// }
+
+// let button = document.getElementById('extraIntro');
+// button.addEventListener('click', expandIntro);
