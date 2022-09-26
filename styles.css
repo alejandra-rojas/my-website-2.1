@@ -240,11 +240,19 @@ audio {
 
 .grid-item-quote {
   font-family: monospace;
-  padding: 1rem 1.5rem;
-  background-color: var(--yellow);
-  color: #55198c;
+  text-transform: lowercase;
+  color: beige;
   line-height: 1rem;
   text-align: center;
+  width: 280px;
+  margin: auto;
+  border-left: beige solid 5px;
+  border-right: beige solid 5px;
+  padding: 1rem 1.5rem;
+  background-color: black;
+
+  opacity: 80%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
 .fixed-element {
