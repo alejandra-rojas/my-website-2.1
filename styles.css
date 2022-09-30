@@ -83,6 +83,7 @@ h3 {
   background-color: #ffb3dd;
   padding: 0.4rem 0.4rem 0.2rem 0.4rem;
   margin-left: 1.5rem;
+  cursor: pointer;
 }
 
 .menu-line {
@@ -106,6 +107,14 @@ section {
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
   grid-column-gap: 10px;
+  max-height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
 }
 
 .intro {
@@ -113,14 +122,25 @@ section {
   font-size: 0.8rem;
   background-color: beige;
   padding: 1.5rem;
-  color: gray;
+  color: rgb(42, 42, 42);
   font-family: monospace;
   text-align: justify;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  height: auto;
+  /*  transform: translateY(0);
+  transition: transform 0.2s;
+  z-index: -4; */
 }
 
 .hide {
   display: none;
+}
+
+button {
+  border: none;
+  font-family: monospace;
+  padding: 0.3rem;
+  cursor: pointer;
 }
 
 .section_toggle {
@@ -409,7 +429,7 @@ footer {
   }
 
   .intro {
-    line-height: 1.2rem;
+    line-height: 1.3rem;
   }
 
   h1 {
@@ -487,6 +507,12 @@ footer {
     line-height: 1.8rem;
     text-align: justify;
     padding: 2.5rem;
+  }
+
+  .intro_btn {
+    top: -13px;
+    left: -15px;
+    font-size: 1.2rem;
   }
 
   .fixed-element {

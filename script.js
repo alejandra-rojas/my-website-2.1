@@ -1,3 +1,16 @@
+// Apending a new element 'p' to HTML
+
+function expandIntro() {
+  let myElement = document.createElement('span'); // create variable
+  myElement.innerHTML = ('If you wanna know more visit the links in the menu.'); // set content
+  document.getElementById('intro').appendChild(myElement); // appending it to new element 'content'
+  document.getElementById('extraIntro').style.display = "none";
+}
+
+let button = document.getElementById('extraIntro');
+button.addEventListener('click', expandIntro);
+
+
 // Change colors when clicking Smiley
 function changeColors() {
   document.body.style.background = 'black'; 
@@ -38,17 +51,19 @@ window.addEventListener('resize', colorDelay);
 
 // Close/Open Intro
 function closeopenIntro() {
-  let dots = document.getElementById("intro");
-  let btnText = document.getElementById("lessIntro");
+let dots = document.getElementById("intro");
+let btnText = document.getElementById("lessIntro");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "block";
-    btnText.innerHTML = "&times;";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read intro";
-  }
+if (dots.style.display === "none") {
+dots.style.display = "block";
+btnText.innerHTML = "&times;";
+} else {
+dots.style.display = "none";
+btnText.innerHTML = "Read intro";
+ }
 }
+
+
 
 // Modal 
 // Get modal element

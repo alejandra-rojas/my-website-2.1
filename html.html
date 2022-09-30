@@ -2,42 +2,29 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>90s BEST!</title>
+    <title>RAW 90s</title>
     <meta
       name="description"
       content="These are the records I listened to in the nineties."
     />
     <link rel="icon" type="image/x-icon" href="Media/favicon_io/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
   </head>
 
   <body>
-    <div class="header-container" id="heead" hidden>
+    <div class="header-container" id="heead">
       <header>
         <div class="logo" id="logo">
-          <img src="Media/smileyshade.png" alt="Nineties yellow smiley face" />
+          <img
+            src="Media/smileyshade.png"
+            alt="Nineties yellow smiley face"
+            width="60px"
+          />
         </div>
         <div class="header-text">
-          <h1 class="animate__animated animate__bounce">
-            The best 90s records
-          </h1>
+          <h1>The best 90s records</h1>
           <h2>aka the albums that shaped me</h2>
         </div>
-        <div class="menu-icon-ham" id="ham-button" aria-label="Menu">
+        <div class="menu-icon-ham" id="ham-button">
           <div class="menu-line"></div>
           <div class="menu-line"></div>
           <div class="menu-line"></div>
@@ -47,8 +34,8 @@
 
     <nav>
       <ul class="menu" id="ham-active">
-        <li><a href="#" role="menuitem">Home</a></li>
-        <li><a href="#" role="menuitem">Buy</a></li>
+        <li><a href="#" role="menuitem" aria-label="Home">Home</a></li>
+        <li><a href="#" role="menuitem" aria-label="Store">Buy</a></li>
         <li>
           <a
             href="https://www.rollingstone.com/music/music-lists/100-best-albums-of-the-90s-152425/"
@@ -68,9 +55,6 @@
         post rock and indie pop, which led to the commercial success of Britpop
         bands like Blur and Oasis; followed by a stream of
         <em>post-Britpop</em> bands like Radiohead and The Verve.
-        <button id="extraIntro" aria-label="Button to expand section">
-          Read More
-        </button>
       </div>
     </section>
 
@@ -199,6 +183,7 @@
         <img
           src="images/photo-camera-svgrepo-com.svg"
           alt="Icon of a photography camera"
+          width="60px"
         />
       </div>
     </aside>
@@ -218,9 +203,6 @@
       <div data-netlify-identity-button class="login-sign">
         HI - The fundamentals
       </div>
-      <div data-netlify-identity-menu></div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
