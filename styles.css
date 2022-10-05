@@ -378,15 +378,16 @@ footer {
 /* Mobile Styles */
 
 @media screen and (max-width: 619px) {
-  .grid,
   .column1,
   .column2,
   .column3 {
     row-gap: 0.2rem;
+    flex-direction: column-reverse;
   }
 
   .grid {
     margin-top: 0;
+    row-gap: 0.2rem;
   }
 
   .header-container {
